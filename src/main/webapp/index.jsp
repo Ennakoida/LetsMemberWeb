@@ -8,6 +8,7 @@
 		<title>멤버 웹</title>
 	</head>
 	<body>
+		<jsp:include page="/WEB-INF/include/header.html"></jsp:include>
 		<h1>모두 함께 멤버 웹!</h1>
 		<h2>로그인 페이지</h2>
 <!-- 		ne : not equal (!=) -->
