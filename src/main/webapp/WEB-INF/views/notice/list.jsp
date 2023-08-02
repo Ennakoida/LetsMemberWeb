@@ -50,6 +50,12 @@
 						<td>${ notice.viewCount }</td>
 					</tr>
 				</c:forEach>
+				<tr>
+					<td colspan="5" align="center">
+<!-- 						<a href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> -->
+						${ pageNavi }
+					</td>
+				</tr>
 			</tbody>
 		</table>
 	</body>

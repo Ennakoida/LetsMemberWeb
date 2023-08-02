@@ -31,8 +31,16 @@
 			</li>
 		</ul>
 		<a href="/notice/list.do">목록으로 이동</a><br>
-		<a href="#">수정하기</a><br>
-		<a href="#">삭제하기</a><br>
+		<a href="/notice/modify.do?noticeNo=${ notice.noticeNo }">수정하기</a><br>
+		<a href="javascript:void(0)" onclick="deleteCheck()">삭제하기</a><br>
 <!-- 		<button id="" onclick="">삭제하기</button> -->
+		<script>
+			const deleteCheck = () => {
+				const noticeNo = '${ notice.noticeNo }';
+				if(confirm("정말로 삭제하시나요?")){
+					location.href = "/notice/delete.do?noticeNo=" + noticeNo;
+				}
+			}
+		</script>
 	</body>
 </html>
